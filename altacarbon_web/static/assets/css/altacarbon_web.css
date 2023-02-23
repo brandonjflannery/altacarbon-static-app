@@ -216,10 +216,12 @@ header
 
 .background-header .main-nav .nav li:last-child a:hover {
   color: #fff!important;
+  cursor: pointer;
 }
 
 .background-header .main-nav .nav li:hover a {
   color: #000!important;
+  cursor: pointer;
 }
 
 .background-header .nav li a.active {
@@ -324,18 +326,21 @@ header
   background-color: #000;
   color: #fff!important;
   opacity: 1;
+  cursor: pointer;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
   color: #fff!important;
   opacity: 1;
+  cursor: pointer;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
   color: #fff!important;
   opacity: 1;
+  cursor: pointer;
 }
 .background-header .main-nav .nav li:last-child a.active {
   color: #000!important;
@@ -485,6 +490,7 @@ header
   .header-area.header-sticky .nav li a.active {
     color: #fff!important;
     opacity: 1;
+    cursor: pointer;
   }
   .header-area {
     background-color: rgba(0, 0, 0, .55);
@@ -531,6 +537,7 @@ header
   .header-area .main-nav .nav li:last-child:hover a {
     background-color: #fff!important;
     color: #fff!important;
+    cursor: pointer;
   }
   .header-area.header-sticky .nav {
     margin-top: 80px !important;
@@ -556,6 +563,7 @@ header
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
     color: #fff!important;
+    cursor: pointer;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
