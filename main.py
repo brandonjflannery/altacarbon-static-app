@@ -1,4 +1,4 @@
-from altacarbon_web import db, create_app, models
+from altacarbon_web import create_app
 
 app = create_app()
 
