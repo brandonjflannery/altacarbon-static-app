@@ -24,10 +24,22 @@ def index():
         data = request.form
         data = request.form
         print(data)
-        send_email(data["name"], data["email"], data["subject"], data["message"])
+        send_contact_form_email(data["name"], data["email"], None, data["message"])
         return render_template('contactsuccess.html')
     else:
         return render_template('index.html')
+
+"""@main.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == "POST":
+        data = request.form
+        data = request.form
+        print(data)
+        send_email(data["name"], data["email"], data["subject"], data["message"])
+        return render_template('contactsuccess.html')
+    else:
+        return render_template('contact.html')
+"""
 
 
 

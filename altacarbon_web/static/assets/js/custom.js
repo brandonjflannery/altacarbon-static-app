@@ -143,6 +143,36 @@
 		}
 	}
 
+	// Show contact form on menu button click
+	var banner_form_active = false;
+	document.getElementById('contact-menu-btn').addEventListener("click", toggleContactForm);
+
+
+	// Window Resize Mobile Video Fix
+	function toggleContactForm() {
+		if (!banner_form_active) {
+			showContactForm();
+			banner_form_active = true;
+		}
+		else if (banner_form_active) {
+			hideContactForm();
+			banner_form_active = false;
+		}
+	};
+
+	function showContactForm() {
+        document.getElementById('altacarbon-banner-form').style.display = 'block';
+        document.getElementById('altacarbon-h3').style.display = 'none';
+        document.getElementById('altacarbon-h6').style.display = 'none';
+    };
+
+    function hideContactForm() {
+        document.getElementById('altacarbon-banner-form').style.display = 'none';
+        document.getElementById('altacarbon-h3').style.display = 'block';
+        document.getElementById('altacarbon-h6').style.display = 'block';
+  
+    };
+
 	
 
 

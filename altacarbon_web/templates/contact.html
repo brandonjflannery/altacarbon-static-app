@@ -14,12 +14,12 @@
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <!-- <li class="scroll-to-section"><a href="#top" class="active">Home</a></li> -->
-                            <!-- <li class="scroll-to-section"><a href="#aboutus">About</a></li> -->
-                            <!-- <li class="scroll-to-section"><a href="#process">Process</a></li> -->
-                            <!-- <li class="scroll-to-section"><a href="#benefits">Benefits</a></li> -->
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#aboutus">About</a></li>
+                            <li class="scroll-to-section"><a href="#process">Process</a></li>
+                            <li class="scroll-to-section"><a href="#benefits">Benefits</a></li>
 							<!-- <li class="scroll-to-section"><a href="#schedule">Team</a></li> -->
-                            <li class="scroll-to-section"><a id='contact-menu-btn'>Contact</a></li> 
+                            <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
                             <!-- <li class="scroll-to-section"><a href="/login">Login</a></li> -->
                             <!-- <li class="main-button"><a href="#"></a></li> -->
                         </ul>        
@@ -34,32 +34,33 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner" id="top">
-        <video autoplay muted loop playsinline id="bg-video">
-            <source src="assets/images/Altacarbon-Video-4K.mp4" type="video/mp4" />
-
-        </video>
-        <img id="bg-img" src='assets/images/alberta-2297204.jpg'/>
-
-
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h3 id='altacarbon-h3'>
-                    <a href="/index" ><img src="assets/images/Altacarbon-1-vert-medium.png" alt="" class="img-fluid"></a>
-                </h3>
-				<h6 id='altacarbon-h6'> sustainable business solutions</h6>
-                <div class="contact-form" id='altacarbon-banner-form'>
+    
+    <!-- ***** Contact Us Area Starts ***** -->
+    <section class="section" id="contact-us">
+        <div class="container-fluid">
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading dark-bg">
+                      <h2>Contact Us</h2>
+                      <img src="assets/images/line-dec.png" alt="">
+                      <p>For all inquiries, please email us using the form below.</p>
+                    </div>
+                    <div class="contact-form">
                         <form id="contact" action="/" method="post">
                           <div class="row">
                             <div class="col-md-12">
                               <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Name" required="">
+                                <input name="name" type="text" id="name" placeholder="Your Name*" required="">
                               </fieldset>
                             </div>
                             <div class="col-md-12">
                               <fieldset>
-                                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="">
+                                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="subject" type="text" id="subject" placeholder="Subject">
                               </fieldset>
                             </div>
                             <div class="col-lg-12">
@@ -69,17 +70,16 @@
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send</button>
+                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
                               </fieldset>
                             </div>
                           </div>
                         </form>
-                    </div>
+					</div>
+				</div>
             </div>
         </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
-
-
+    </section>
+    <!-- ***** Contact Us Area Ends ***** -->
     
 {% endblock %}

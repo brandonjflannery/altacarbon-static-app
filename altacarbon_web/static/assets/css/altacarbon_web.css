@@ -113,12 +113,12 @@ body {
 }
 
 ::selection {
-  background: #03C11D;
+  background: #4B4F73;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #03C11D ;
+  background: #4B4F73 ;
   color: #fff;
 }
 
@@ -219,11 +219,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #03C11D!important;
+  color: #000!important;
 }
 
 .background-header .nav li a.active {
-  color: #03C11D!important;
+  color: #000!important;
 }
 
 .header-area {
@@ -308,7 +308,7 @@ header
   display: inline-block;
   font-size: 14px;
   padding: 11px 17px;
-  background-color: #03C11D;
+  /* background-color: #03C11D;*/
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -321,20 +321,20 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
-  background-color: #fff;
-  color: #03C11D!important;
+  background-color: #000;
+  color: #fff!important;
   opacity: 1;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #03C11D!important;
+  color: #fff!important;
   opacity: 1;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #03C11D!important;
+  color: #fff!important;
   opacity: 1;
 }
 .background-header .main-nav .nav li:last-child a.active {
@@ -463,7 +463,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #03C11D;
+  color: #fff;
 }
 
 
@@ -483,7 +483,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #03C11D!important;
+    color: #fff!important;
     opacity: 1;
   }
   .header-area {
@@ -520,17 +520,17 @@ header
   }
   .header-area .main-nav .nav li:last-child {
     width: 100%;
-    background-color: #03C11D;
+    background-color: #fff;
     color: #fff;
     border-radius: 0px;
   }
   .header-area .main-nav .nav li:last-child a {
-    background-color: #03C11D!important;
+    background-color: #fff!important;
   }
   .header-area .main-nav .nav li:last-child a:hover,
   .header-area .main-nav .nav li:last-child:hover a {
     background-color: #fff!important;
-    color: #03C11D!important;
+    color: #fff!important;
   }
   .header-area.header-sticky .nav {
     margin-top: 80px !important;
@@ -555,7 +555,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #03C11D!important;
+    color: #fff!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -605,6 +605,7 @@ banner
 
 .main-banner {
   position: relative;
+  background-color: #232d39;
 }
 
 #bg-img {
@@ -703,6 +704,7 @@ aboutus
 
 #aboutus {
   margin-bottom: 80px;
+  display: none;
 }
 
 .feature-item {
@@ -741,7 +743,7 @@ aboutus
 
 /*
 ---------------------------------------------
-subscribe
+call-to-action
 ---------------------------------------------
 */
 
@@ -752,6 +754,7 @@ subscribe
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  display: none;
 }
 
 .cta-content h2 {
@@ -783,6 +786,7 @@ Our Process
 
 #process {
   margin-bottom: 140px;
+  display: none;
 }
 
 #tabs ul {
@@ -881,6 +885,7 @@ benefits
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: none;
 }
 
 #benefits table {
@@ -1077,7 +1082,7 @@ contact
 */
 
 #contact-us {
-  padding: 0px 0px 140px 0px;
+  padding: 0px 0px 300px 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.657),rgba(0, 0, 0, 0.1)) , url(../images/leaves-1498985-large.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1105,14 +1110,34 @@ contact
   border-radius: 10px;
 }
 
+#top .contact-form {
+  margin: auto;
+  padding: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: None;
+}
+
+#top .contact-form #contact {
+  margin:  auto;
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  border: 0px solid #ddd;
+  border-radius: 10px;
+}
+
 .contact-form input,
 .contact-form textarea {
-  color: #000;
+  color: #fff;
   font-size: 13px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 1;
   box-shadow: 0px 0px 0px #ddd;
+  font-weight: 700;
+  transition: all .3s;
   width: 100%;
   height: 40px;
   outline: none;
@@ -1131,22 +1156,22 @@ contact
 }
 
 .contact-form ::-webkit-input-placeholder { /* Edge */
-  color: #7a7a7a;
+  color: #cfcfcf;
 }
 
 .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #7a7a7a;
+  color: #cfcfcf;
 }
 
 .contact-form ::placeholder {
-  color: #7a7a7a;
+  color: #cfcfcf;
 }
 
 .contact-form button {
   display: inline-block;
   font-size: 13px;
   padding: 11px 17px;
-  background-color: #03C11D;
+  background-color: rgba(0, 0, 0, 0.95); /*#03C11D;*/
   box-shadow: 0px 0px 0px #ddd;
   color: #fff;
   text-align: center;
