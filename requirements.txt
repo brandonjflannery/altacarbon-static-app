@@ -1,0 +1,9 @@
+Flask
+gunicorn
+flask_login
+flask_sqlalchemy
+oauthlib
+requests
+authlib
+werkzeug
+sqlalchemy
